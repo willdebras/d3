@@ -75,7 +75,7 @@ function type(d) {
 //filter, prep, sort
 
 function ready(movies) {
-  const moviesClean = filterDate(movies);
+  const moviesClean = filterData(movies);
   const barChartData = prepareBarChartData(moviesClean).sort((a, b) => {
     return d3.descending(a.revenue - b.revenue);
   });
